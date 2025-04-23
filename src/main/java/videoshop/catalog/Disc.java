@@ -34,7 +34,7 @@ import org.salespointframework.catalog.Product;
 public class Disc extends Product {
 
 	public static enum DiscType {
-		BLURAY, DVD;
+		BLURAY,KNDER ,DVD;
 	}
 
 	// (｡◕‿◕｡)

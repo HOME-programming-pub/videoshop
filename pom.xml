@@ -6,6 +6,7 @@
 	<version>5.0.0.BUILD-SNAPSHOT</version>
 	<description>The videoshop is a sample web application based on Spring Boot and the Salespoint framework.</description>
 
+
 	<parent>
 		<groupId>de.tudresden.inf.st.lab</groupId>
 		<artifactId>st-lab-parent</artifactId>
@@ -29,6 +30,18 @@
 			<scope>runtime</scope>
 		</dependency>
 
+
+=======
+		<!-- 
+			exposes runtime information on the application that can be displayed 
+		 	by the Spring Boot Dashboard (VS Code) 
+		-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-actuator</artifactId>
+		</dependency>
+
+>>>>>>> Stashed changes
 	</dependencies>
 
 	<repositories>
@@ -45,6 +58,7 @@
 			<id>salespointframework</id>
 			<url>https://www.st.inf.tu-dresden.de/SalesPoint/repository</url>
 		</repository>
+
 
 	</repositories>
 

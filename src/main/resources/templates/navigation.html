@@ -22,6 +22,11 @@
                 <a class="item" href="catalog.html" th:href="@{/dvds}" th:text="#{nav.dvdCatalog}">DVD Catalog</a>
                 <a class="item" href="catalog.html" th:href="@{/blurays}" th:text="#{nav.blurayCatalog}">Blu-ray
                     Catalog</a>
+                <a class="item" href="catalog.html" th:href="@{/kinderfilme}" th:text="#{nav.kinderCatalog}">Kinderfilme</a>
+
+
+
+
                 <a class="item" href="cart.html" th:href="@{/cart}" th:text="${session.cart} == null or ${session.cart.isEmpty()} ? #{nav.cart} : #{nav.cart} + ' (' + ${session.cart.toList().size()} + ')'">Warenkorb</a>
 
                 <div class="right menu">

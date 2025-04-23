@@ -69,6 +69,9 @@ class CatalogController {
 		return "catalog";
 	}
 
+
+
+
 	// (｡◕‿◕｡)
 	// Befindet sich die angesurfte Url in der Form /foo/5 statt /foo?bar=5 so muss man @PathVariable benutzen
 	// Lektüre: http://spring.io/blog/2009/03/08/rest-in-spring-3-mvc/
@@ -85,6 +88,19 @@ class CatalogController {
 
 		return "detail";
 	}
+	// Erweiterung
+	@GetMapping("/kinderfilme")
+	public String kinderfilmCatalog(Model model) {
+
+		model.addAttribute("catalog", catalog.findAll()
+				.filter(disc -> disc.getGenre().toLowerCase().contains("kinder")));
+
+		model.addAttribute("title", "catalog.kinder.title");
+
+		return "catalog";
+	}
+
+
 
 	@PostMapping("/disc/{disc}/comments")
 	public String comment(@PathVariable Disc disc, @Valid CommentAndRating form, Errors errors) {
@@ -114,5 +130,6 @@ class CatalogController {
 		default Comment toComment(LocalDateTime time) {
 			return new Comment(getComment(), getRating(), time);
 		}
+
 	}
 }

@@ -87,5 +87,8 @@ class CatalogDataInitializer implements DataInitializer {
 		videoCatalog.save(new Disc("Oldboy", "old", Money.of(24.99, EURO), "Action/Drama/Thriller", DiscType.BLURAY));
 		videoCatalog.save(new Disc("Bill & Ted's Excellent Adventure", "bt", Money.of(29.99, EURO),
 				"Adventure/Comedy/Family", DiscType.BLURAY));
+		videoCatalog.save(new Disc("Löwenzahn – Das große Abenteuer", "loewenzahn", Money.of(8.99, EURO), "Kinder", DiscType.KNDER));
+		videoCatalog.save(new Disc("Shaun das Schaf", "shaun", Money.of(7.99, EURO), "Kinder", DiscType.KNDER));
+
 	}
 }
