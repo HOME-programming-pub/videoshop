@@ -30,16 +30,7 @@
 			<scope>runtime</scope>
 		</dependency>
 
-<<<<<<< Updated upstream
-		<!--
-			exposes runtime information on the application that can be displayed
-		 	by the Spring Boot Dashboard (VS Code)
-=======
-		<!-- 
-			exposes runtime information on the application that can be displayed 
-		 	by the Spring Boot Dashboard (VS Code) 
->>>>>>> Stashed changes
-		-->
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
